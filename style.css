@@ -1,0 +1,1388 @@
+@font-face {
+  font-family: "HGKRuderPlakat";
+  src: url("assets/HGKBRuderPlakatLLVar.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+
+body {
+  margin: 0;
+  background: #000;
+  box-sizing: border-box;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+
+  /* Sketch und Video untereinander */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* Scrollen ermöglichen */
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+}
+
+
+/** Haupt quadrat **/
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: pink;
+
+  width: 100vh;
+  height: 100vh;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+
+.container-start{
+  justify-content: flex-start;
+}
+
+
+/** flex items **/
+.box-item-1{
+  padding: 0;
+  margin: 0;
+ 
+  box-sizing:border-box;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(0, 228, 174);
+  font-size: 14vh;
+  line-height: 1;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+  
+
+}
+
+
+
+.box-item-2{
+    padding: 0;
+  margin: 0;
+
+  box-sizing:border-box;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(255, 128, 0);
+  font-size: 14vh;
+  line-height: 1;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+  
+ 
+}
+.box-item-3{
+    padding: 0;
+  margin: 0;
+  
+  box-sizing:border-box;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+   background-color: rgb(147, 2, 225);
+  font-size: 14vh;
+  line-height: 1;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+ 
+}
+.box-item-4{
+
+   padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+   background-color: rgb(254, 254, 0);
+  font-size: 14vh;
+  line-height: 1;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+
+  
+ 
+}
+
+.box-item-5{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+ background-color: rgb(239, 239, 239);
+  font-size: 14vh;
+  line-height: 1;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+
+
+   
+}
+.box-item-6{
+
+  padding: 0;
+  margin: 0;
+ 
+  box-sizing:border-box;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+    background-color: rgb(0, 255, 77);
+  font-size: 14vh;
+  line-height: 1;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+  
+ 
+
+}
+.box-item-7{
+    padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+    background-color: rgb(255, 147, 251);
+  font-size: 14vh;
+  line-height: 1;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+  
+
+}
+.box-item-8{
+    padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+    background-color: rgb(255, 0, 64);
+  font-size: 14vh;
+  line-height: 1;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+
+
+}
+.box-item-9{
+    padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  justify-content:center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(22, 68, 255);
+  font-size: 14vh;
+  line-height: 1;
+  font-family: "HGKRuderPlakat";
+  font-variation-settings: "YTUC" 100;
+
+   
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  aspect-ratio: 1/1;;
+}
+
+.stage {
+  width: 100%;
+  height: 100vh;
+  padding: 16px;
+  box-sizing: border-box;
+  display: block;
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+  width: 640px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: #000;
+}
+
+.hint {
+  margin: 8px 0 0;
+  line-height: 1.4;
+  color: #444;
+}
+
+.specimen-panel {
+  flex: 1 1 320px;
+  min-height: 280px;
+  min-width: min(100%, 320px);
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.specimen-panel__label {
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: #aaa;
+  line-height: 1.4;
+}
+
+.specimen {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "HGKRuderPlakat";
+  font-size: clamp(48px, 12vw, 160px);
+  font-weight: 32;
+  font-variation-settings: "YTUC" 100;
+  line-height: 1;
+  outline: none;
+  border: none;
+  word-break: break-word;
+  padding: 8px;
+}
+
+
+
+#video1 { display: block;}
+#canvas1 {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+        aspect-ratio: 1/1;
+}
+/* Unsichtbare Kamera und Zeichenfläche für Slide 2 */
+#canvas2 {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    aspect-ratio: 1/1;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#canvas3 {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+}
+/* Unsichtbare Kamera und Zeichenfläche für Slide 4 */
+#canvas4 {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    opacity: 0;
+        aspect-ratio: 1/1;
+  
+    pointer-events: none;
+}
+
+
+
+/*/////////////SLIDE 2 /*/
+
+
+/* ---------- Spezimen ---------- */
+.box {
+
+    height: 100vh;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #EFEFEF;
+    color: #000;
+    position: relative;
+    overflow: hidden;
+
+    font-variation-settings:
+        "YTUC" 900,
+        "YTLC" 900;
+}
+
+
+#line1, #line2, #line3, #line4 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 0;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+#line1 { border-top: 1px dashed #FF8000; border-bottom: 1px dashed #FF8000; }
+#line2 { border-top: 1px dashed #FF93FB; border-bottom: 1px dashed #FF93FB; }
+#line3 { border-top: 1px dashed #1644FF; }
+#line4 { border-bottom: 1px dashed #00FF4D; }
+
+.line-orange, .line-rosa, .line-blue, .line-green {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 10px;
+    height: 100%;
+}
+.line-orange { left: 0;  background-color: #FF8000; }
+.line-rosa   { right: 0; background-color: #FF93FB; }
+.line-blue   { right: 0; background-color: #1644FF; }
+.line-green  { right: 0; background-color: #00FF4D; }
+
+
+
+.container-1 {
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    gap: 1px;
+}
+
+.container-2 {
+                /* füllt den Platz zwischen Details und Fusszeile */
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin: 0;
+    padding: 0;
+}
+.container-3 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    z-index: 10;
+}
+
+.details-left-1, .details-left-2, .details-right-1, .details-right-2, .font-style {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.details-left-1  { font-weight: bold; width: 50%; justify-content: flex-start; align-items: flex-start; padding-left: 10px; }
+.details-left-2  { font-weight: 100;  width: 100%; justify-content: flex-start; align-items: flex-start; }
+.details-right-1 { font-weight: bold; width: 50%; text-align: right; justify-content: flex-end; align-items: top; padding-right: 10px; }
+.details-right-2 { font-weight: 100;  width: 50%; text-align: right; justify-content: flex-end; align-items: top; }
+
+.font-style {
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* font-variation-settings kommt jetzt per JS auf .box und wird vererbt */
+.upper-letter, .lower-letter {
+    flex: 0 0 33%;
+    min-width: 0;               /* breite Glyphen schieben den Container nicht mehr */
+    font-size: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.upper-letter p,
+.lower-letter p {
+    padding: 0;
+    margin: 0;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* SLIDE 03 ---- //////////////////////////////Video unterhalb des Sketches */
+.video-section {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-section video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+#slide-drei {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#slide-drei .video-section {
+    margin: 0;
+    padding: 0;
+}
+
+/* SLIDE 04 ---- ///////////////////////////*/
+
+/*body {
+  background-color: #f5f5f5;
+  color: #111;
+  font-family: monospace;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}*/
+
+.layout {
+  display: flex;
+  flex-wrap: nowrap;        /* wichtig: nicht umbrechen */
+  height: 100vh;
+  overflow: hidden;
+    position: relative;
+}
+
+
+.layout__main {
+  flex: 1 1 0;              /* nimmt den restlichen Platz links */
+  min-width: 0;             /* erlaubt Schrumpfen */
+  overflow-y: auto;         /* scrollt, falls die UI zu hoch ist */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+.stage {
+  position: relative;
+}
+
+video {
+    display: none;
+}
+canvas {
+  display: block;
+  width: 940px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: #000;
+}
+
+canvas.is-picking {
+  cursor: crosshair;
+  outline: 2px solid #8221ff;
+  outline-offset: 2px;
+}
+
+.pick-hint {
+  margin: 8px 0 0;
+  color: #8221ff;
+}
+
+.color-tool {
+  width: 580px;
+  max-width: 100%;
+  padding: 14px;
+  background: #EFEFEF;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.color-tool__title {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.color-tool__hint {
+  margin: 0 0 14px;
+  line-height: 1.4;
+  color: #444;
+}
+
+.color-tool__field {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 4px 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-tool__field span {
+  grid-column: 1 / -1;
+}
+
+.color-tool__field input[type="range"] {
+  grid-column: 1;
+  width: 100%;
+}
+
+.color-tool__field output {
+  grid-column: 2;
+  min-width: 2ch;
+  text-align: right;
+}
+
+.color-slot-wrap {
+  
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #eee;
+}
+
+.color-slot {
+  display: grid;
+  grid-template-columns: auto 3fr;
+  gap: 8px 10px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+  background: #faf6ff;
+}
+
+.color-slot.is-active {
+  outline: 2px solid #8221ff;
+}
+
+.color-slot input[type="color"] {
+  width: 40px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.color-slot__name {
+  font-weight: bold;
+}
+
+.color-slot__actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.color-slot__actions button {
+  font-family: inherit;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.color-slot__actions button:hover {
+  border-color: #8221ff;
+}
+
+.color-slot label.enable {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/*EMIL RUDER PART*/
+
+.specimen-panel {
+    height: 100vh;
+    aspect-ratio: 1 / 1;
+      flex: 0 0 auto;           /* feste Grösse, rechts */
+    background-color: #00FF4D;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+
+.left-column {
+    width: 50%;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;        /* nichts ragt aus dem Panel */
+}
+
+.right-column {
+    width: 50%;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+}
+
+
+.flex-item-1 {
+    width: calc(100% - 6px);
+    min-height: 50%;         /* Startgrösse, wächst mit dem Text */
+    height: auto;
+    
+    flex: 0 0 auto;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+#flex-item-1-text {
+    font-family: "HGKRuderPlakat";
+    font-variation-settings:
+    "YTUC" 900;
+    margin: 0;
+    padding: 5px;
+    font-size: 19.2vh;
+    letter-spacing: 1%;
+    line-height: 1.2;
+    color: #000000;
+    text-align: left;
+}
+
+
+.flex-item-2 {
+    width: 100%;
+    min-height: 25%;
+    height: auto;
+    flex: 0 0 auto;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#flex-item-2-text {
+    font-family: "HGKRuderPlakat";
+    font-variation-settings:
+    "YTUC" 500;
+    margin: 0;
+    padding: 5px;
+    font-size: 2.5vh;
+    letter-spacing: 5%;
+    line-height: 0.98;
+    color: #000000;
+    text-align: left;
+}
+
+
+.flex-item-3 {
+    min-width: 50%;
+    width: fit-content;      /* wird breiter, wenn der Text breiter wird */
+    max-width: 100%;
+    min-height: 15%;
+    height: auto;
+    flex: 0 0 auto;
+      line-height: 1.2;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+}
+
+#flex-item-3-text {
+    font-family: "HGKRuderPlakat";
+    font-variation-settings:
+    "YTUC" 100;
+    margin: 0;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 5vh;
+    letter-spacing: 3%;
+    line-height: 0.85;
+    color: #000000;
+    text-align: left;
+}
+
+/* leeres Feld */
+.flex-item-4 {
+    width: 100%;
+    flex: 1 1 0;
+    min-height: 0;
+    background-color:#EFEFEF;
+    display: flex;
+    flex-direction: column;
+}
+
+#status {
+  display: none;
+}
+
+
+/* =====================================
+   GRUNDLAYOUT: 2 GLEICH GROSSE SPALTEN
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background: #000;
+}
+
+body {
+    display: block;
+    font-family: "HGKRuderPlakat", sans-serif;
+}
+
+/* Jede Slide füllt den Bildschirm */
+#slide-null,
+#slide-eins,
+#slide-zwei,
+#slide-drei,
+#slide-vier {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Zwei Spalten: links Kamera, rechts Gestaltung */
+.layout {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Linke Hälfte */
+.stage,
+.layout__main {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Webcam und Canvas füllen die linke Hälfte */
+.stage video,
+.stage canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+/* Webcam sichtbar machen */
+.stage video {
+    display: block;
+}
+
+/* Rechte Hälfte: Slide-Inhalt */
+.box,
+.specimen-panel,
+.box-container,
+
+
+
+
+/* Die separate Szene in Slide 3 */
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Keine unnötigen Abstände */
+.container-1,
+.container-2,
+.container-3 {
+    max-width: 100%;
+}
+
+/* Slide 4: Spezimen darf schrumpfen */
+.specimen-panel {
+    flex: initial;
+}
+
+/* Slide 2: Spezimen darf nicht über die Hälfte ragen */
+.box {
+    flex: initial;
+}
+
+/* Slide 1: Raster in der rechten Hälfte */
+#slide-eins .box-container {
+    width: 100%;
+    height: 100%;
+}
+/* Slide 0:  */
+#slide-null .box-container {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+/* Responsive: auf schmalen Bildschirmen untereinander */
+@media (max-width: 700px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh;
+    }
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#main-layout {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    aspect-ratio: 1/1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Kamera links */
+#main-layout > .stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+#main-layout > .stage video,
+#main-layout > .stage canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+/* Kamera sichtbar */
+#main-layout > .stage video {
+    display: block;
+}
+
+/* Canvas über dem Kamerabild */
+#main-layout > .stage canvas {
+    pointer-events: none;
+}
+
+/* Rechte Seite */
+#right-side {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* Alle Slides liegen übereinander */
+#right-side > .right-slide {
+    position: absolute;
+    inset: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Nur aktiven Slide anzeigen */
+#right-side > .right-slide.active {
+    display: block;
+}
+
+/* Slide 1 */
+#slide-eins .box-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* Slide 2 */
+#slide-zwei .box {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+/* Slide 3 */
+#slide-drei .video-section {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+#slide-drei #sceneVideo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* Slide 4 */
+#slide-vier .specimen-panel {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    flex: initial;
+    min-width: 0;
+    min-height: 0;
+}
+
+/* Verhindert, dass die Kamera beim Wechsel verschwindet */
+#main-layout > .stage {
+    z-index: 2;
+}
+
+
+
+/* =========================================
+   FINALES LAYOUT: KAMERA LINKS, SLIDES RECHTS
+========================================= */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: block;
+    min-height: 0;
+}
+
+/* Zwei gleich grosse Spalten */
+#main-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Kamera links */
+#main-layout > .stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Kamera und Canvas deckungsgleich */
+#main-layout > .stage video,
+#main-layout > .stage canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+/* Nur die gemeinsame Kamera sichtbar */
+#main-layout > .stage #video1 {
+    display: block !important;
+    z-index: 1;
+}
+
+/* Die vier Canvas-Elemente liegen übereinander.
+   Sichtbar bleibt jeweils nur das aktive Canvas. */
+#main-layout > .stage canvas {
+    display: none;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Rechte Hälfte */
+#right-side {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Slides übereinanderlegen */
+#right-side > .right-slide {
+    position: absolute;
+    inset: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Aktiver Slide */
+#right-side > .right-slide.active {
+    display: block;
+}
+
+/* Slide 1: Raster */
+#slide-eins .box-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+/* Slide 2: Spezimen */
+#slide-zwei .box {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    aspect-ratio: auto;
+    flex: initial;
+}
+#slide-null .box {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    aspect-ratio: auto;
+    flex: initial;
+    color: #000;
+}
+
+/* Slide 3: Video */
+#slide-drei .video-section {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+#slide-drei #sceneVideo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Slide 4: Spezimen */
+#slide-vier .specimen-panel {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+    aspect-ratio: auto;
+    flex: initial;
+}
+
+/* Verhindert, dass das linke Kamerabild
+   über die rechte Hälfte gelegt wird */
+#main-layout > .stage {
+    z-index: 1;
+}
+
+#right-side {
+    z-index: 0;
+}
+
+
+/* Slides rechts */
+#right-side {
+    position: relative;
+    overflow: hidden;
+}
+
+#right-side > .right-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+}
+
+/* Aktiver Slide */
+#right-side > .right-slide.active {
+    display: block;
+}
+
+/* Slide gleitet von unten nach oben hinein */
+
+/* Rechter Bereich als gemeinsamer Animationsraum */
+#right-side {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Alle Slides liegen übereinander */
+#right-side > .right-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+    transform: translateY(0);
+}
+
+/* Aktiver Slide */
+#right-side > .right-slide.active {
+    display: block;
+}
+
+/* Neuer Slide kommt von unten herein */
+#right-side > .right-slide.slide-in {
+    z-index: 2;
+    animation: slideIn 1.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Vorheriger Slide geht nach oben hinaus */
+#right-side > .right-slide.slide-out {
+    display: block;
+    z-index: 1;
+    animation: slideOut 1.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
+/* =========================================
+   KAMERA LINKS QUADRATISCH – SLIDES RECHTS
+========================================= */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#main-layout {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) min(50vw, 100vh) !important;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* Kamera links: gleich gross wie das rechte Quadrat */
+#main-layout > .stage {
+    position: relative;
+    width: min(50vw, 100vh);
+    height: min(50vw, 100vh);
+    aspect-ratio: 1 / 1;
+    justify-self: start;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+/* Kamerabild füllt das Quadrat */
+#main-layout > .stage #video1 {
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* Rechte Seite: quadratisch */
+#right-side {
+    position: relative;
+    width: min(50vw, 100vh) !important;
+    height: min(50vw, 100vh) !important;
+    justify-self: end;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Slides füllen das rechte Quadrat */
+#right-side > .right-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+
+/* Slide 5: Abschlussplakat */
+#slide-fuenf {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#slide-fuenf .poster-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#video1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(1.2) saturate(1) brightness(1.05);
+}
+
+/* Slide 0: Startbild */
+#slide-null {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+#slide-null.active {
+    display: block;
+}
+
+#slide-null img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}

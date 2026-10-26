@@ -1,0 +1,247 @@
+```html
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alles zusammen</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div id="main-layout">
+
+    <!-- LINKS: KAMERA -->
+    <div class="stage">
+        <video id="video1" autoplay playsinline></video>
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+        <canvas id="canvas4"></canvas>
+    </div>
+
+
+    <!-- RECHTS: SLIDES -->
+    <div id="right-side">
+
+        <!-- SLIDE 0: START -->
+<div id="slide-null" class="right-slide active">
+    <img
+        src="./assets/impress.jpg"
+        alt="Startplakat"
+    >
+</div>
+
+
+        <!-- SLIDE 1: RASTER -->
+        <div id="slide-eins" class="right-slide">
+
+            <div class="box-container container-start">
+                <div class="box-item-1">p</div>
+                <div class="box-item-2">r</div>
+                <div class="box-item-3">i</div>
+                <div class="box-item-4">n</div>
+                <div class="box-item-5">t</div>
+                <div class="box-item-6">w</div>
+                <div class="box-item-7">o</div>
+                <div class="box-item-8">r</div>
+                <div class="box-item-9">k</div>
+            </div>
+
+        </div>
+
+
+        <!-- SLIDE 2: RUDER-PLAKAT-SPEZIMEN -->
+        <div id="slide-zwei" class="right-slide">
+
+            <div class="box">
+
+                <div class="container-1">
+
+                    <div class="details-left-1">
+                        <p>
+                            Glyph Name<br>
+                            Unicode Name<br>
+                            Unicode Decimal<br>
+                            Unicode Hex<br>
+                            HTML Entity
+                        </p>
+                    </div>
+
+                    <div class="details-left-2">
+                        <p>
+                            <span id="upper-glyph-name">Q</span><br>
+                            <span id="upper-unicode-name">Latin Capital Letter Q</span><br>
+                            <span id="upper-decimal">81</span><br>
+                            <span id="upper-hex">0051</span><br>
+                            <code id="upper-entity">&amp;#x51;</code>
+                        </p>
+                    </div>
+
+                    <div class="details-right-2">
+                        <p>
+                            <span id="lower-glyph-name">q</span><br>
+                            <span id="lower-unicode-name">Latin Small Letter Q</span><br>
+                            <span id="lower-decimal">113</span><br>
+                            <span id="lower-hex">0071</span><br>
+                            <code id="lower-entity">&amp;#x71;</code>
+                        </p>
+                    </div>
+
+                    <div class="details-right-1">
+                        <p>
+                            Glyph Name<br>
+                            Unicode Name<br>
+                            Unicode Decimal<br>
+                            Unicode Hex<br>
+                            HTML Entity
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="container-2">
+
+                    <div id="line1">
+                        <div class="line-orange"></div>
+                    </div>
+
+                    <div id="line2">
+                        <div class="line-rosa"></div>
+                    </div>
+
+                    <div id="line3">
+                        <div class="line-blue"></div>
+                    </div>
+
+                    <div id="line4">
+                        <div class="line-green"></div>
+                    </div>
+
+                    <div class="upper-letter">
+                        <p id="upper-letter">K</p>
+                    </div>
+
+                    <div class="lower-letter">
+                        <p id="lower-letter">k</p>
+                    </div>
+
+                </div>
+
+
+                <div class="container-3">
+                    <div class="font-style">
+                        <div id="font-info">
+                            Ruder Plakat LL Var High 500
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SLIDE 3: VIDEO -->
+        <div id="slide-drei" class="right-slide">
+
+            <section class="video-section">
+                <video id="sceneVideo" playsinline preload="metadata">
+                    <source
+                        src="./assets/60fps_2.mp4"
+                        type="video/mp4"
+                    >
+                </video>
+            </section>
+
+        </div>
+
+
+        <!-- SLIDE 4: EMIL RUDER -->
+        <div id="slide-vier" class="right-slide">
+
+            <div class="specimen-panel">
+
+                <div class="flex-container">
+
+                    <div class="left-column">
+                        <div class="flex-item-1">
+                            <p id="flex-item-1-text">Poster Design</p>
+                        </div>
+                    </div>
+
+                    <div class="right-column">
+
+                        <div class="flex-item-2">
+                            <p id="flex-item-2-text">TheEEs</p>
+                        </div>
+
+                        <div class="flex-item-3">
+                            <p id="flex-item-3-text">
+                                BOLD<br>
+                                EXPRESSIVE<br>
+                                TYPEFACE
+                            </p>
+                        </div>
+
+                        <div class="flex-item-4"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SLIDE 5: ABSCHLUSSPLAKAT -->
+        <div id="slide-fuenf" class="right-slide">
+
+            <img
+                src="./assets/poster.png"
+                alt="Abschlussplakat"
+                class="poster-image"
+            >
+
+        </div>
+
+    </div>
+    <!-- ENDE: RIGHT-SIDE -->
+
+</div>
+<!-- ENDE: MAIN-LAYOUT -->
+
+
+<!-- MEDIAPIPE -->
+<script
+    src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.js"
+    crossorigin="anonymous">
+</script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3.1675466124/drawing_utils.js"
+    crossorigin="anonymous">
+</script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/hands.js"
+    crossorigin="anonymous">
+</script>
+
+
+<!-- EIGENE SCRIPTS -->
+<script src="./script01.js"></script>
+<script src="./script02.js"></script>
+<script src="./script03.js"></script>
+<script src="./script04.js"></script>
+
+<!-- OPENCV -->
+<script async src="https://docs.opencv.org/4.x/opencv.js"></script>
+
+</body>
+</html>
+```
